@@ -1,0 +1,129 @@
+{
+  "checked_on": "2026-10-22",
+  "scope": "repository-level licenses, source inventory and separately installed dependencies; not an exhaustive legal clearance of future media",
+  "sources": [
+    {
+      "repository": "LottieFiles/motion-design-skill",
+      "checked_commit": "f9a8a041b85185ee4881b3471d3415e939aac772",
+      "license_id": "MIT",
+      "license_url": "https://github.com/LottieFiles/motion-design-skill/blob/f9a8a041b85185ee4881b3471d3415e939aac772/LICENSE",
+      "license_text_sha256": "9fc2e8685daa09e28d54b6afa8a38f168417c5735a3cd676c80c159785e93a80",
+      "distribution": "方法／文件參考；未附上游程式",
+      "notice_included": true
+    },
+    {
+      "repository": "Vincentwei1021/video-shotcraft",
+      "checked_commit": "43bd349a136651865ecfa6ea1cf012f6e957d304",
+      "license_id": "Apache-2.0",
+      "license_url": "https://github.com/Vincentwei1021/video-shotcraft/blob/43bd349a136651865ecfa6ea1cf012f6e957d304/LICENSE",
+      "license_text_sha256": "b2ce9877a55547ada9b870150664d1468ff777e67cc9888806a73927d31c5771",
+      "distribution": "方法／文件參考；未附上游程式",
+      "notice_included": true
+    },
+    {
+      "repository": "full-stack-skills/threejs-skills",
+      "checked_commit": "92789c1eda17bbfade4a4274903038dcfe6cbff0",
+      "license_id": "Apache-2.0",
+      "license_url": "https://github.com/full-stack-skills/threejs-skills/blob/92789c1eda17bbfade4a4274903038dcfe6cbff0/LICENSE",
+      "license_text_sha256": "9788c988b60209ecf085939b225ef19f4b0313b35df22c230469d4ced2061938",
+      "distribution": "方法／文件參考；未附上游程式",
+      "notice_included": true
+    },
+    {
+      "repository": "gnipbao/story-to-handdrawn-video",
+      "checked_commit": "198aefa9b298af3a20d3bd757c93433623d38ccd",
+      "license_id": "MIT",
+      "license_url": "https://github.com/gnipbao/story-to-handdrawn-video/blob/198aefa9b298af3a20d3bd757c93433623d38ccd/LICENSE",
+      "license_text_sha256": "481521d963c714f9d79b68e0cde61ab0b012e17dc3b90f4ed877717a0c401fa3",
+      "distribution": "方法／文件參考；未附上游程式",
+      "notice_included": true
+    },
+    {
+      "repository": "greensock/GSAP",
+      "checked_commit": "13e2b790546426a1a2e0e9b409f3f8dc6d6611f2",
+      "license_id": "NOASSERTION",
+      "license_url": "https://github.com/greensock/GSAP/tree/13e2b790546426a1a2e0e9b409f3f8dc6d6611f2",
+      "license_text_sha256": null,
+      "distribution": "外部 runtime；npm 標示自訂免費條款，官方條款頁本次暫停服務，未完整核實；不內附",
+      "notice_included": false
+    },
+    {
+      "repository": "greensock/gsap-skills",
+      "checked_commit": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+      "license_id": "MIT",
+      "license_url": "https://github.com/greensock/gsap-skills/blob/aed9cfd3277740755f6bfc1155c7aa645403b760/LICENSE",
+      "license_text_sha256": "51b04b06556662dd817e8f4aa6d06bc7139dc73739e1319a7233cfde3e147b90",
+      "distribution": "方法／文件參考；未附上游程式",
+      "notice_included": true
+    },
+    {
+      "repository": "heygen-com/hyperframes",
+      "checked_commit": "2ef60f3f26fd51ecf86dc9baa081f7e2b9982a67",
+      "license_id": "Apache-2.0",
+      "license_url": "https://github.com/heygen-com/hyperframes/blob/2ef60f3f26fd51ecf86dc9baa081f7e2b9982a67/LICENSE",
+      "license_text_sha256": "4259155fb06f127687ee7b0a8a3682d45132db0f2da26cbc0b7a2d1e796436b8",
+      "distribution": "方法／文件參考；未附上游程式",
+      "notice_included": true
+    },
+    {
+      "repository": "mrdoob/three.js",
+      "checked_commit": "758330b15ed854cd72f26cafa3ff41a153a8e9ca",
+      "license_id": "MIT",
+      "license_url": "https://github.com/mrdoob/three.js/blob/758330b15ed854cd72f26cafa3ff41a153a8e9ca/LICENSE",
+      "license_text_sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "distribution": "npm 依賴；套件不含 runtime，vendor 會保留其 LICENSE",
+      "notice_included": true
+    },
+    {
+      "repository": "nolangz/pixel2motion",
+      "checked_commit": "e9faedb28930df0da2acf17da00c80730a78cfe8",
+      "license_id": "MIT",
+      "license_url": "https://github.com/nolangz/pixel2motion/blob/e9faedb28930df0da2acf17da00c80730a78cfe8/LICENSE",
+      "license_text_sha256": "87347cdc59b13ed9f3720a9fc0b92017bb6564740ca01c3098246d914f2ea3fa",
+      "distribution": "方法／文件參考；未附上游程式",
+      "notice_included": true
+    },
+    {
+      "repository": "remotion-dev/remotion",
+      "checked_commit": "777b041ea6859cb7ff67cdbd104f836655eb5722",
+      "license_id": "NOASSERTION",
+      "license_url": "https://github.com/remotion-dev/remotion/blob/777b041ea6859cb7ff67cdbd104f836655eb5722/LICENSE.md",
+      "license_text_sha256": "bd65083b940f61904f6ef298aade918a7cad72a3e35bc406e36fab365844b673",
+      "distribution": "外部 renderer；自訂 Free／Company License，依身分與規模；不內附",
+      "notice_included": false
+    },
+    {
+      "repository": "remotion-dev/skills",
+      "checked_commit": "039e8a2fc78b67efc228d5645367838b85818a1c",
+      "license_id": "NOASSERTION",
+      "license_url": "https://github.com/remotion-dev/skills/tree/039e8a2fc78b67efc228d5645367838b85818a1c",
+      "license_text_sha256": null,
+      "distribution": "未找到 LICENSE（含遞迴目錄檢查）；僅連結，不重分發或翻譯其文件／程式",
+      "notice_included": false
+    },
+    {
+      "repository": "salomonMuriel/media-production-skills",
+      "checked_commit": "0efd303cbf5331d02cad90d548b3c4db06089c4b",
+      "license_id": "MIT",
+      "license_url": "https://github.com/salomonMuriel/media-production-skills/blob/0efd303cbf5331d02cad90d548b3c4db06089c4b/LICENSE",
+      "license_text_sha256": "6153990a3e9f7c3e45b09ced9db901b250fa4a2346baeb27d16415d662fa258b",
+      "distribution": "方法／文件參考；未附上游程式",
+      "notice_included": true
+    },
+    {
+      "repository": "skindhu/skind-skills",
+      "checked_commit": "cda40dcb11adcd3c280526fff3ccfbbd64222822",
+      "license_id": "MIT",
+      "license_url": "https://github.com/skindhu/skind-skills/blob/cda40dcb11adcd3c280526fff3ccfbbd64222822/LICENSE",
+      "license_text_sha256": "20ce0b6c64b4730a6c7d5c1c7b4e0a23bd29982efd44e0e496031b9d28f68479",
+      "distribution": "方法／文件參考；未附上游程式",
+      "notice_included": true
+    }
+  ],
+  "installed_three": {
+    "version": "0.181.2",
+    "license": "MIT",
+    "license_sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+    "vendor_notice_verified": true
+  }
+}

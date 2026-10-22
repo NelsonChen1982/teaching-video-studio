@@ -1,0 +1,49 @@
+{
+  "version": "0.2.0",
+  "integration": "methodology-adapters; no upstream source bundled",
+  "reviewed_on": "2026-10-22",
+  "sources": [
+    {
+      "name": "video-shotcraft",
+      "repository": "https://github.com/Vincentwei1021/video-shotcraft",
+      "reviewed_document_sha256": "a94f87f093d07c96ddf3245d442acece7ceb6c544035855c63e26a216a068820",
+      "status": "read; upstream runtime not tested"
+    },
+    {
+      "name": "pixel2motion",
+      "repository": "https://github.com/nolangz/pixel2motion",
+      "reviewed_document_sha256": "db12866ecbaf5aabbf72793c26e91e1d2f7f80807207fb47d394ff54acede4cb",
+      "status": "read; upstream runtime not tested"
+    },
+    {
+      "name": "story-to-handdrawn-video",
+      "repository": "https://github.com/gnipbao/story-to-handdrawn-video",
+      "reviewed_document_sha256": "bdd0ee0c779befc50d9b35707f2361e05e85e9a8226d1743bf46583e723db5c3",
+      "status": "read; upstream runtime not tested"
+    },
+    {
+      "name": "motion-design",
+      "repository": "https://github.com/LottieFiles/motion-design-skill",
+      "reviewed_document_sha256": "8729ecbc7e5736c1295baaa8ba0384bb4b1aac9cf91b83fcdc64d9548a57bb19",
+      "status": "read; upstream runtime not tested"
+    },
+    {
+      "name": "remotion-best-practices",
+      "repository": "https://github.com/remotion-dev/skills",
+      "reviewed_document_sha256": "db0a72a3eb8830b89a684d8c57849f65564e6aa70763c97288b86c2e964faf88",
+      "status": "read; upstream runtime not tested"
+    },
+    {
+      "name": "GSAP",
+      "repository": "https://github.com/greensock/gsap-skills",
+      "reviewed_document_sha256": "3887b47e050ab5afbe2a9a820f23d39fa02ab785e06a343be44c6f91d84d12b3",
+      "status": "local skill read; original runtime contracts retained"
+    },
+    {
+      "name": "HyperFrames",
+      "repository": "https://github.com/heygen-com/hyperframes",
+      "reviewed_document_sha256": "a8d6fe52471be6bcf1816ba0b9eb16c6d1efc830c668de533d6bee8d41d86e11",
+      "status": "local skill read; original runtime contracts retained"
+    }
+  ]
+}

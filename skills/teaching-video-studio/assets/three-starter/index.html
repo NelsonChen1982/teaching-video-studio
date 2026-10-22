@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Teaching Video Studio · 3D camera starter</title>
+<style>
+html,body{margin:0;width:100%;height:100%;background:#101b28;color:#fff;font-family:system-ui,sans-serif}
+#root{width:100%;height:100%;position:relative;overflow:hidden}
+canvas{width:100%;height:100%;display:block}
+#title{position:absolute;left:6%;top:7%;font-size:clamp(24px,3vw,64px);font-weight:700;letter-spacing:.02em}
+#label{position:absolute;bottom:14%;left:6%;font-size:clamp(20px,2.4vw,48px);padding:.35em .6em;background:#101b28dd;border-left:4px solid #a5efd5}
+#note{position:absolute;left:6%;bottom:7%;font-size:clamp(12px,1.2vw,24px);color:#bbc9d8}
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="18" data-width="1920" data-height="1080">
+<canvas id="scene"></canvas><div id="title">一個請求，三個角色</div><div id="label"></div><div id="note">運鏡技術樣例 · 示意物件 · 尚未加入配音與正式字幕</div>
+</div>
+<script type="module">
+import * as THREE from './vendor/three.module.js';
+import {stateAt} from './motion.mjs';
+const canvas=document.querySelector('#scene');
+const renderer=new THREE.WebGLRenderer({canvas,antialias:true,alpha:false});
+renderer.setPixelRatio(1);renderer.setSize(1920,1080,false);
+renderer.outputColorSpace=THREE.SRGBColorSpace;
+renderer.toneMapping=THREE.ACESFilmicToneMapping;
+renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.PCFSoftShadowMap;
+const scene=new THREE.Scene();scene.background=new THREE.Color('#101b28');
+const camera=new THREE.PerspectiveCamera(38,1920/1080,.1,100);
+scene.add(new THREE.HemisphereLight('#e9f4ff','#283047',2));
+const key=new THREE.DirectionalLight('#fff2d9',4);key.position.set(-3,8,6);key.castShadow=true;
+key.shadow.mapSize.set(2048,2048);Object.assign(key.shadow.camera,{left:-10,right:10,top:10,bottom:-10});scene.add(key);
+const rim=new THREE.DirectionalLight('#92bcff',2);rim.position.set(6,4,-5);scene.add(rim);
+const mat=color=>new THREE.MeshStandardMaterial({color,roughness:.4,metalness:.12});
+function box(w,h,d,color,x,y,z=0){const m=new THREE.Mesh(new THREE.BoxGeometry(w,h,d),mat(color));m.position.set(x,y,z);m.castShadow=true;m.receiveShadow=true;scene.add(m);return m;}
+const floor=new THREE.Mesh(new THREE.PlaneGeometry(100,100),mat('#182639'));floor.rotation.x=-Math.PI/2;floor.receiveShadow=true;scene.add(floor);
+const colors=['#7bb8e8','#b1a4e8','#9ddcc3'];
+for(let i=0;i<3;i++)box(2.7,.15,2.1,'#26394c',(i-1)*4,.15);
+box(2.2,1.5,.2,colors[0],-4,1.4);
+box(1.85,1.13,.08,'#132e46',-4,1.4,.15);
+box(.13,.65,.13,colors[0],-4,.5);box(.9,.1,.6,colors[0],-4,.23);
+for(let i=0;i<3;i++){box(1.8,.35,1.1,colors[1],0,.6+i*.48);box(.55,.06,.03,'#e4ddff',.35,.6+i*.48,.57);}
+for(let i=0;i<4;i++){box(1.6,.2,1.25,colors[2],4,.5+i*.32);box(.12,.1,.03,'#163c34',4.58,.5+i*.32,.64);}
+const curve=new THREE.CatmullRomCurve3([new THREE.Vector3(-4,.25,1.4),new THREE.Vector3(0,.25,1.4),new THREE.Vector3(4,.25,1.4)]);
+scene.add(new THREE.Mesh(new THREE.TubeGeometry(curve,32,.025,8,false),mat('#557087')));
+const packet=new THREE.Mesh(new THREE.IcosahedronGeometry(.18,1),new THREE.MeshStandardMaterial({color:'#fff1bd',emissive:'#d9ad45',emissiveIntensity:.5,roughness:.3}));scene.add(packet);
+const labels=['前端：接收操作，顯示結果','後端：驗證請求，處理邏輯','資料庫：儲存資料，回應查詢'];
+function renderAt(t){const s=stateAt(t);camera.position.fromArray(s.camera);camera.lookAt(...s.target);packet.position.set(s.packetX,s.packetY,.8);packet.rotation.set(s.t*.2,s.t*.5,0);document.querySelector('#label').textContent=labels[s.active];renderer.render(scene,camera);}
+window.renderAt=renderAt;
+window.addEventListener('hf-seek',event=>renderAt(event.detail.time));
+renderAt(window.__hfThreeTime||0);window.studioReady=true;
+</script>
+</body>
+</html>

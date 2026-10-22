@@ -1,0 +1,6 @@
+interface:
+  display_name: "教學影片工作室"
+  short_description: "從教材、受眾與視覺參考出發，製作有配音字幕、圖解與運鏡的教學動畫影片"
+  default_prompt: "使用 $teaching-video-studio，把專案教材製作成教學動畫，先確認受眾、呈現效果與節奏。"
+policy:
+  allow_implicit_invocation: true

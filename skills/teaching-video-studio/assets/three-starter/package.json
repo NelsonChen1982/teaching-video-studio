@@ -1,0 +1,8 @@
+{
+  "name": "teaching-video-three-starter",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {"vendor": "node vendor.mjs"},
+  "dependencies": {"three": "0.181.2"}
+}

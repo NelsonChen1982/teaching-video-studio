@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "engine": "hyperframes",
+  "style": {
+    "intent": "清楚且溫暖的立體圖解，展示一次查詢的因果",
+    "evidence": [
+      "老師指定高中生、三維示意與平穩跟拍；尚未提供視覺參考，以下為提案"
+    ],
+    "traits": {
+      "line": "主體輪廓清楚，無裝飾描線",
+      "shape": "圓角但具真實結構的示意物件",
+      "palette": "深藍背景與三個角色色",
+      "material": "霧面外殼、透明顯示區，材質有區別",
+      "composition": "單一主焦點，字幕保留底部安全區",
+      "type": "清晰繁體無襯線，關鍵標籤獨立"
+    },
+    "motion": "平穩跟拍查詢訊息，抵達處停留；不加彈跳或鏡頭抖動"
+  },
+  "transitions": [
+    {
+      "id": "frontend-to-backend",
+      "relation": "cause-effect",
+      "asset_mode": "scene3d",
+      "candidates": [
+        {
+          "id": "match-continuity",
+          "tradeoff": "保留封包與空間方位，需完整建好沿途場景"
+        },
+        {
+          "id": "cut",
+          "tradeoff": "成本低而清楚，但會中斷追蹤同一請求的感覺"
+        },
+        {
+          "id": "ink-spread",
+          "tradeoff": "材質與題材無墨水依據，會遮擋因果，不採用"
+        }
+      ],
+      "selected": "match-continuity",
+      "reason": "學生需要跟著同一請求理解前後端關係，連續跟拍比媒材特效清楚",
+      "implementation": "原創 Three.js camera position/lookAt 同步路徑，固定 t 驅動，不套外部具名鏡頭",
+      "qa_times": [
+        0,
+        0.25,
+        0.5,
+        0.75,
+        1
+      ]
+    }
+  ],
+  "review": {
+    "styleframe": "pending",
+    "transition_sample": "pending",
+    "evidence": []
+  }
+}
