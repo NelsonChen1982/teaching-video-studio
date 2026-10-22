@@ -47,3 +47,12 @@
 - 修正 lockfile 後 npm ci 與 vendor 成功，Three.js 0.181.2 的 LICENSE 和 vendor 通知逐位元一致。
 - 文件本地連結、個人路徑及常見憑證格式掃描通過；此掃描非通用機密辨識保證。
 - 第三方授權核對見 license-audit.json 與 THIRD_PARTY_NOTICES；未確認的外部內容不內附，沒有宣稱所有 runtime 都是 MIT。
+
+## 0.2.4 影片敘事修正
+
+2026-10-23：針對實際交付被指出「像會動的簡報」的失敗，新增 film-language.md 與前置製作／驗收規則。不是只禁 SVG；Canvas 和 WebGL 同樣要對應指定的主體、動作與美術要求。
+
+- 12 項 Python、9 項 Node 工具回歸通過；skill-creator 格式檢查通過。
+- 新增指引的本地 Markdown 連結已檢查。
+- 此次修正是指令與驗收流程，既有工具測試不證明跨宿主會遵守，更不代表藝術品質自動合格。
+- Grok 的新版本行為尚未重測；不聲稱可保證每次產生高品質影片。
